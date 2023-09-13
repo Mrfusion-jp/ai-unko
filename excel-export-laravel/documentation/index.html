@@ -1,0 +1,184 @@
+<!doctype html>  
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MySQL Data to Excel Export - Laravel</title>
+	
+	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<link rel="stylesheet" href="assets/css/custom_style.css" media="screen">
+</head>
+<body class="documenter-project-itemname">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo" style="background-image: url(assets/images/logo.png);"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Intro</a></li>
+			<li><a href="#features" title="Features">Features</a></li>
+			<li><a href="#Requirements" title="Requirements">Requirements</a></li>
+			<li><a href="#Installation" title="Installation">Installation</a></li>
+			<li><a href="#InstallationVideo" title="Installation Video">Installation Video</a></li>
+			<li><a href="#changelog" title="Changelog">Changelog</a></li>
+		</ul>
+		<div id="documenter_copyright">Copyright MySQL Data to<br>Excel Export -<br>Laravel - 2020 
+		</div>
+	</div>
+	<div id="documenter_content">
+		<!-- Intro -->
+		<section id="documenter_cover">
+			<div class="page-header"><h3><span>#</span>Intro</h3><hr class="notop"></div>
+			<h1>MySQL Data to Excel Export - Laravel <strong class="badge badge-primary">v 1.0.0</strong></h1>
+			<div id="documenter_buttons">
+				<a href="https://phpspreadsheet.readthedocs.io/en/latest/" target="_blank" class="btn btn-primary btn-large">PhpSpreadsheet Documentation</a>
+			</div>
+			<p>
+			<strong>MySQL Data to Excel Export - Laravel</strong> is simple web report export tool, you do can use <strong>MySQL Data to Excel Export - Laravel</strong> tool for excel file.It can be easily customized as like page setup, set page margins, center page, show/hide gridlines, worksheet name, font, font size, cells fill color, cells border color, text alignment vertical, text alignment horizontal and cells width easily changeable. Excel cells is set number formats and data validation. MySQL Data is showing rows group wise and header(rows and columns merge).You can protected and unprotected easily set on excel worksheet cells.
+			</p>
+			<ul>
+				<li><strong>created:</strong> 17/02/2020</li>
+				<li><strong>Last Update:</strong> 17/02/2020</li>
+				<li><strong>Author:</strong> ThemePosh</li>
+				<li><strong>Email:</strong> tspprt7@gmail.com</li>
+			</ul>
+			<p>Thank you for your interest in my tool. If you have any questions that are beyond the scope of this help file, please feel free to contact with our plugin Support page <a target="_blank" href="https://codecanyon.net/user/themeposh">MySQL Data to Excel Export - Laravel</a> Support or for very critical issue, you can contact with email: tspprt7@gmail.com [Email reply can be delay]. Thank you so much.</p>
+
+		</section><!-- /Intro -->
+
+		<!-- Features -->
+		<section id="features">
+			<div class="page-header"><h3><span>#</span>Features</h3><hr class="notop"></div>
+			<ul>
+				<li>Basic</li>
+				<li>Row Grouping</li>
+				<li>Header (Rows and Columns Merge)</li>
+				<li>Autofilter Range of Cells</li>
+				<li>Formula Calculations</li>
+				<li>Protected and Unprotected on Cells</li>
+				<li>Image with Description</li>
+			</ul>
+		</section><!-- /Features -->
+		
+		<!-- Requirements -->
+		<section id="Requirements">
+			<div class="page-header"><h3><span>#</span>Requirements</h3><hr class="notop"></div>
+			<div class="p_bg mb10">
+				<ul>
+					<li>PHP version ^7.0</li>
+					<li>Laravel ^5.5</li>
+					<li>PHP extension php_zip enabled</li>
+					<li>PHP extension php_xml enabled</li>
+					<li>PHP extension php_gd2 enabled</li>
+				</ul>
+			</div>
+		</section><!-- /Requirements -->
+		
+		<!-- Installation -->
+		<section id="Installation">
+			<div class="page-header"><h3><span>#</span>How to install in existing laravel project</h3><hr class="notop"></div>
+			<p>To install in local existing laravel project. As like: <strong>laravel_test</strong></p>
+			<p>
+				<img class="border" src="assets/images/image_1.png">
+			</p>
+			<p class="mb10">
+				<strong>Please follow the steps bellow:</strong>
+			</p>
+			
+			<h1><strong class="badge badge-primary mb10">Step-1:</strong></h1>
+			<ul>
+				<li>Extract the archive file on your machine that you've downloaded from CodeCanyon.</li>
+				<li>Import database table <strong>(mysql-to-excel-laravel/demo_database/excelexport_laravel_db.sql)</strong> into existing database.</li>
+			</ul>
+			<p>
+				<img class="border" src="assets/images/image_2.png">
+			</p>
+			
+			<h1><strong class="badge badge-primary mb10">Step-2:</strong></h1>
+			<div class="p_bg mb10">
+				<p>Use <a target="_blank" href="https://getcomposer.org/">Composer</a> to install PhpSpreadsheet into your project. As like: <strong>laravel_test</strong></p>
+				<pre>composer require phpoffice/phpspreadsheet</pre>
+			</div>
+			<p>
+				<img class="border" src="assets/images/image_3.png">
+			</p>
+			
+			<h1><strong class="badge badge-primary mb10">Step-3:</strong></h1>
+			<p>Open the <strong>(mysql-to-excel-laravel/routes/web.php)</strong> page any text editor.</p>
+			<p>
+				<img class="border" src="assets/images/image_4.png">
+			</p>
+			<p>Copy all route and paste into your project. as like: <strong>laravel_test/routes/web.php</strong></p>
+			<p>
+				<img class="border" src="assets/images/image_5.png">
+			</p>
+			
+			<h1><strong class="badge badge-primary">Step-4:</strong></h1>
+			<p>Copy all blade<strong>(mysql-to-excel-laravel/resources/views/...blade.php)</strong> page and paste into your project. as like: <strong>laravel_test/resources/views</strong></p>
+			<p>
+				<img class="border" src="assets/images/image_6.png">
+			</p>
+			
+			<h1><strong class="badge badge-primary">Step-5:</strong></h1>
+			<p>Copy <strong>(mysql-to-excel-laravel/app/ExcelExport.php)</strong> page and paste into your project. as like: <strong>laravel_test/app</strong></p>
+			<p>
+				<img class="border" src="assets/images/image_7.png">
+			</p>
+			
+			<h1><strong class="badge badge-primary">Step-6:</strong></h1>
+			<p>Copy Controllers <strong>(mysql-to-excel-laravel/app/Http/Controllers/...php)</strong> page and paste into your project. as like: <strong>laravel_test/app/Http/Controllers</strong></p>
+			<p>
+				<img class="border" src="assets/images/image_8.png">
+			</p>
+			
+			<h1><strong class="badge badge-primary">Step-7:</strong></h1>
+			<p>Copy <strong>(mysql-to-excel-laravel/public/assets, images and media)</strong> folder and paste into your project. as like: <strong>laravel_test/public</strong></p>
+			<p>
+				<img class="border" src="assets/images/image_9.png">
+			</p>
+			
+			<h1><strong class="badge badge-primary">Step-8:</strong></h1>
+			<p>Open your browser and enter your url (http://localhost/laravel_test).</p>
+			<p>The following screen will appear</p>
+			<p>
+				<img class="border" src="assets/images/image_10.png">
+			</p>
+		</section><!-- /Installation -->
+
+		<!-- Installation Video -->
+		<section id="InstallationVideo">
+			<div class="page-header"><h3><span>#</span>Installation Video</h3><hr class="notop"></div>
+			<p>To install in local existing laravel project. As like: <strong>laravel_test</strong></p>
+			<p>
+			<iframe width="700" height="400" src="https://www.youtube.com/embed/OFVrvj3hr8U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</p>
+		
+		</section><!-- /Installation Video -->
+		
+		<!-- Changelog -->
+		<section id="changelog">
+			<div class="page-header"><h3><span>#</span>Changelog</h3><hr class="notop"></div>
+			<ul>
+				<p><strong>v 1.0.0 (17/02/2020)</strong></p>
+				<li>Initial Release</li>
+			</ul>
+		</section><!-- /Changelog -->
+		
+	</div>
+	
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	<script>
+		document.createElement('section');
+		var duration='500';
+		var easing='easeInSine';
+	</script>
+	<script src="assets/js/script.js"></script>
+	
+</body>
+</html>
